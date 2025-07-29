@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #ffd602;
+  --secundary-color: #d5040a;
+  --third-color: #036cb6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
