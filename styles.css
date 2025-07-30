@@ -87,3 +87,45 @@ body {
 .loader div:nth-child(3) {
   animation-delay: 0.6s;
 }
+
+header {
+  display: flex;
+  grid-area: nav;
+  animation: navbar ease-in-out 2s;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 80px;
+}
+
+.navbar-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-content ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+  list-style: none;
+}
+
+.navbar-content ul li a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--secundary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@keyframes navbar {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
