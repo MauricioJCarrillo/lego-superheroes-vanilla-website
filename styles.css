@@ -43,7 +43,7 @@ body {
   height: 100%;
   background: white;
   z-index: 3;
-  animation: loader 2s linear forwards;
+  animation: loader 1s linear forwards;
 }
 
 @keyframes loader {
@@ -127,5 +127,43 @@ header {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: section;
+  padding-left: 80px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-content span {
+  padding-left: 30px;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.main-content h1 {
+  margin: -10px 0 20px 0;
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+
+.main-content p {
+  width: 60%;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
