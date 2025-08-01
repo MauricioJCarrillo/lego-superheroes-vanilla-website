@@ -43,7 +43,7 @@ body {
   height: 100%;
   background: white;
   z-index: 3;
-  animation: loader 1s linear forwards;
+  animation: 1s linear forwards loader;
 }
 
 @keyframes loader {
@@ -63,7 +63,7 @@ body {
   margin: 10px;
   background: lightblue;
   border-radius: 50%;
-  animation: scaling 2s ease-in-out infinite;
+  animation: 2s ease-in-out infinite scaling;
 }
 
 @keyframes scaling {
@@ -91,7 +91,7 @@ body {
 header {
   display: flex;
   grid-area: nav;
-  animation: navbar ease-in-out 2s;
+  animation: 2s ease-in-out navbar;
 }
 
 .navbar-content {
@@ -136,7 +136,7 @@ header {
   flex-direction: column;
   grid-area: section;
   padding-left: 80px;
-  animation: fadeIn 2s ease-in-out;
+  animation: 2s ease-in-out fadeIn;
 }
 
 .main-content span {
@@ -201,7 +201,7 @@ header {
   width: 100%;
   grid-column: 2 / 6;
   grid-row: 1 / 2;
-  animation: 2s side-content-image 0.5s ease-in-out;
+  animation: 2s ease-in-out 0.5s side-content-image;
 }
 
 @keyframes side-content-image {
