@@ -4,7 +4,7 @@ const openModalButton = document.querySelector("#button-open-modal");
 // Acceso al modal usando la clase 'modal'
 const modal = document.querySelector(".modal");
 
-// Acceso al botón con id 'modal-container-close'
+// Acceso al botón con la clase 'modal-container-close'
 const closeModalButton = document.querySelector(".modal-container-close");
 
 openModalButton.addEventListener("click", () => {
