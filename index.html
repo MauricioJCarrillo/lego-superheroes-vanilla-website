@@ -22,6 +22,9 @@
     />
     <!-- CSS principal -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS principal -->
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- Main content -->
@@ -55,7 +58,7 @@
           alt="superman logo image"
         />
       </section>
-      <footer>
+      <footer id="button-open-modal">
         <article>
           <img
             class="spiderman-image"
@@ -86,6 +89,14 @@
       <div></div>
     </section>
     <!-- Modal -->
-    <section></section>
+    <section class="modal hidden">
+      <article class="modal-container">
+        <img
+          class="modal-container-close"
+          src="https://img.icons8.com/?size=100&id=23537&format=png&color=000000"
+          alt="close button"
+        />
+      </article>
+    </section>
   </body>
 </html>
