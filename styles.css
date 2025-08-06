@@ -141,7 +141,7 @@ header {
 
 .main-content span {
   padding-left: 30px;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 300;
 }
 
@@ -278,7 +278,8 @@ footer article img:hover {
 .modal-container {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 95%;
+  max-width: 600px;
   height: 410px;
   padding: 10px;
   background-color: white;
@@ -383,4 +384,85 @@ footer article img:hover {
 .modal-content--slider .cta-btn:hover {
   background-color: #c36063;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .navbar-content {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .main-content {
+    align-items: center;
+    padding: 5%;
+  }
+
+  .main-content span {
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .main-content h1 {
+    margin: 0 0 20px 0;
+    font-size: 3rem;
+  }
+
+  .main-content p {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .side-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5% 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+  }
+
+  .side-content p {
+    margin: 20px 0;
+    padding: 5px 15px;
+    font-size: 2rem;
+    color: white;
+    transform: rotate(0);
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+  }
+
+  .side-content img {
+    width: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    background-color: white;
+  }
+
+  footer article {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  footer article img {
+    position: static;
+  }
 }
