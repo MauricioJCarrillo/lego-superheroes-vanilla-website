@@ -106,19 +106,29 @@ header {
   height: 50px;
 }
 
-.navbar-content ul {
+.nav-menu {
   display: flex;
-  justify-content: space-evenly;
-  width: 450px;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  gap: 10px;
   list-style: none;
 }
 
-.navbar-content ul li a {
-  font-size: 1.3rem;
-  font-weight: 300;
+.nav-menu li a {
+  margin-left: 25px;
+  font-size: 1.5rem;
   color: var(--secundary-color);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav-menu li:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #4b0204;
 }
 
 @keyframes navbar {
