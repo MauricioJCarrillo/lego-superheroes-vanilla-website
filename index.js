@@ -18,3 +18,13 @@ closeModalButton.addEventListener("click", () => {
   modal.classList.remove("visible");
   modal.classList.add("hidden");
 });
+
+// Mobile toggle
+const navMenu = document.querySelector(".nav-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+mobileMenu.addEventListener("click", function () {
+  console.log("Click");
+  navMenu.classList.toggle("active");
+  mobileMenu.textContent = navMenu.classList.contains("active") ? "✕" : "☰";
+});
